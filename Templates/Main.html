@@ -9,18 +9,20 @@
 </head>
 <body>
     <div class="container">
-    <form action="#" method="post">
-        <input type="text" placeholder="Latitude">
-        <input type="text" placeholder="Longitude">
+    <form action="/getweather" method="post">
+        <input type="text" name="lat" placeholder="Latitude">
+        <input type="text" name="lon" placeholder="Longitude">
         <button type="submit">Get Weather</button>
     </form>
     <div class="weatherDetails">
+        {% if props[3] != "" %}
         <div class="timeZone">
-            LoremTimeZone
+            TimeZone : {{props[3]}}
         </div>
-        <span class="details">Temperature (Celcius) : </span>
-        <span class="details">Humidity : </span>
-        <span class="details">Clouds : </span>
+        <span class="details">Temperature (Celcius) : {{props[0]}}</span>
+        <span class="details">Humidity : {{props[1]}} %</span>
+        <span class="details">Clouds : {{props[2]}} %</span>
+        {% endif %}
     </div>
 </div>
 </body>

@@ -41,7 +41,7 @@ form button{
 .timeZone{
     background: aliceblue;
     border-right: 2px solid rgba(35, 100, 223, 0.404);
-    width: 35vw;
+
     padding: 20px;
     color: rgba(35, 100, 223, .5);
     font-weight: bold;
@@ -50,6 +50,7 @@ form button{
 .details{
     display: block;
     margin: 25px 0px;
+    width: 40vw;
     font-size: 20px;
     color: rgb(61, 61, 61);
 }
