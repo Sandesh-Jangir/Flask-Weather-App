@@ -7,6 +7,8 @@ humidity = ""
 temperature= ""
 time_zone = ""
 clouds = ""
+error_occured = False
+
 
 app = Flask(__name__)
 
